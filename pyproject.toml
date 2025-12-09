@@ -1,0 +1,17 @@
+[project]
+name = "hrm-portal"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "bcrypt==4.0.1",
+    "fastapi>=0.123.5",
+    "passlib[bcrypt]==1.7.4",
+    "postgrest>=2.24.0",
+    "pydantic[email]>=2.12.5",
+    "pyngrok>=7.5.0",
+    "python-dotenv>=1.2.1",
+    "supabase>=2.24.0",
+    "uvicorn>=0.38.0",
+]
