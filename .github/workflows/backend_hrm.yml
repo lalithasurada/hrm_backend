@@ -41,7 +41,7 @@ jobs:
           docker compose down || true
 
           echo "=== Removing old image ==="
-          docker images | grep "hrm_backend" | awk '{print $3}' | xargs -r docker rmi -f || true
+          docker images | grep "hrm_backend-main" | awk '{print $3}' | xargs -r docker rmi -f || true
 
           echo "=== Build new image (no cache) ==="
           docker compose build --no-cache
